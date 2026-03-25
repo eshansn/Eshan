@@ -3,11 +3,11 @@ import { useEffect, useRef } from 'react';
 import gallery1 from '../assets/gallery/gallery1.jpg';
 import gallery2 from '../assets/gallery/gallery3.jpg';
 import gallery3 from '../assets/gallery/gallery2.jpg';
-import gallery4 from '../assets/gallery/gallery4.JPG';
-import gallery5 from '../assets/gallery/gallery5.JPG';
-import gallery6 from '../assets/gallery/gallery6.JPG';
-import gallery7 from '../assets/gallery/gallery7.JPG';
-import gallery8 from '../assets/gallery/gallery8.JPG';
+import gallery4 from '../assets/gallery/pic4.jpg';
+import gallery5 from '../assets/gallery/pic5.jpg';
+import gallery6 from '../assets/gallery/pic6.jpg';
+import gallery7 from '../assets/gallery/pic7.jpg';
+import gallery8 from '../assets/gallery/pic8.jpg';
 import gallery9 from '../assets/gallery/gallery9.png';
 
 
