@@ -11,9 +11,9 @@ const Navbar = () => {
     ];
 
     const socialItems = [
-        { label: 'Behance', link: 'https://twitter.com' },
-        { label: 'GitHub', link: 'https://github.com' },
-        { label: 'LinkedIn', link: 'https://linkedin.com' }
+        { label: 'Behance', link: 'https://www.behance.net/eshannethmina' },
+        { label: 'GitHub', link: 'https://github.com/eshansn' },
+        { label: 'LinkedIn', link: 'https://www.linkedin.com/in/eshan-nethmina-322b45300/' }
     ];
 
     return (

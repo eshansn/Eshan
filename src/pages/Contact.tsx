@@ -100,16 +100,16 @@ const ContactPage = () => {
 
                     {/* Social Icons */}
                     <div className="w-full flex justify-center space-x-5 pt-6 border-t border-white/10">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors p-2">
+                        <a href="https://www.linkedin.com/in/eshan-nethmina-322b45300/" className="text-gray-400 hover:text-white transition-colors p-2">
                             <Linkedin size={20} strokeWidth={1.5} />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors p-2">
+                        <a href="https://www.behance.net/eshannethmina" className="text-gray-400 hover:text-white transition-colors p-2">
                             <BehanceIcon size={22} />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors p-2">
+                        <a href="https://www.instagram.com/prodby.sandev/" className="text-gray-400 hover:text-white transition-colors p-2">
                             <Instagram size={20} strokeWidth={1.5} />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors p-2">
+                        <a href="mailto:eshannethmina51@gmail.com" className="text-gray-400 hover:text-white transition-colors p-2">
                             <Mail size={20} strokeWidth={1.5} />
                         </a>
                     </div>
