@@ -464,7 +464,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 .sm-scope .sm-prelayer { position: absolute; top: 0; right: 0; height: 100%; width: 100%; transform: translateX(0); }
                 .sm-scope .sm-panel-item { position: relative; color: #000; font-weight: 600; font-size: 4rem; cursor: pointer; line-height: 1; letter-spacing: -2px; text-transform: uppercase; transition: background 0.25s, color 0.25s; display: inline-block; text-decoration: none; padding-right: 1.4em; }
                 .sm-scope .sm-panel-itemLabel { display: inline-block; will-change: transform; transform-origin: 50% 100%; }
-                
+                .sm-scope .sm-panel-list[data-numbering] { counter-reset: smItem; }
                 /* THE HOVER EFFECT */
                 .sm-scope .sm-panel-item:hover .sm-panel-itemLabel { 
                     background: linear-gradient(90deg, #5227FF 0%, #6322cc 50%, #d8b4fe 100%);
