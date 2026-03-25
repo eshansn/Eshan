@@ -1,5 +1,6 @@
 import React from 'react';
 import StaggeredMenu from './StaggeredMenu';
+import myLogo from '../assets/ESNW@4x.png';
 
 const Navbar = () => {
     const menuItems = [
@@ -31,7 +32,7 @@ const Navbar = () => {
 
                 changeMenuColorOnOpen={true}
                 colors={['#B19EEF', '#5227FF']}
-                logoUrl="src/assets/ESNW@4x.png"
+                logoUrl={myLogo}
                 onMenuOpen={() => console.log('Menu opened')}
                 onMenuClose={() => console.log('Menu closed')}
             />
