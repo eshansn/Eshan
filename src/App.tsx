@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { Routes, Route } from "react-router-dom"; // REMOVED BrowserRouter from here
+import { Routes, Route, useLocation } from "react-router-dom"; // Added useLocation
 import gsap from "gsap";
 
 import heroVideo from "@/assets/hero-video.mp4";
@@ -12,7 +12,6 @@ import Projects from './pages/Projects.tsx';
 import WorkInProgress from './pages/work.tsx';
 import ContactPage from './pages/Contact.tsx'
 
-// Separate the Landing Page sections
 const HomeContent = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -51,18 +50,19 @@ const HomeContent = () => {
 };
 
 export default function App() {
+    const location = useLocation(); // Hook to get current path
+
+    // Logic: Hide Navbar if we are on the /work page
+    const showNavbar = location.pathname !== '/work';
+
     return (
         <div className="min-h-screen w-full bg-black text-white overflow-x-hidden relative">
-            <Navbar />
+            {/* Render Navbar only if showNavbar is true */}
+            {showNavbar && <Navbar />}
 
             <Routes>
-                {/* 1. Main Landing Page */}
                 <Route path="/" element={<HomeContent />} />
-
-                {/* 2. Separate Work Page */}
                 <Route path="/work" element={<WorkInProgress />} />
-
-                {/* 3. Safety Net (Optional) */}
                 <Route path="*" element={<div className="pt-40 text-center">404 - Page Not Found</div>} />
             </Routes>
         </div>

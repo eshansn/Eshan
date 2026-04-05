@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // Added useNavigate
 import BorderGlow from '../components/BorderGlow';
 import SplitText from '../components/SplitText';
 
@@ -18,6 +18,7 @@ interface Project {
 }
 
 const WorkInProgress: React.FC = () => {
+    const navigate = useNavigate(); // Initialize navigation
 
     const workInProgress: Project[] = [
         {
@@ -59,7 +60,26 @@ const WorkInProgress: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen  text-white py-16 px-4">
+        <div className="min-h-screen bg-black text-white pt-12 pb-24 px-6 sm:px-12 md:px-24">
+
+            {/* Go Back Button */}
+            <div className="max-w-6xl mx-auto mb-12">
+                <button
+                    onClick={() => navigate(-1)}
+                    className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors cursor-pointer relative z-50"
+                >
+                    <svg
+                        width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                        className="transition-transform group-hover:-translate-x-1"
+                    >
+                        <line x1="19" y1="12" x2="5" y2="12" />
+                        <polyline points="12 19 5 12 12 5" />
+                    </svg>
+                    <span className="font-medium">Go Back</span>
+                </button>
+            </div>
+
             <div className="max-w-6xl mx-auto mb-16">
                 <SplitText
                     text="My Projects"
@@ -67,9 +87,9 @@ const WorkInProgress: React.FC = () => {
                 />
             </div>
 
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 w-full">
                 {workInProgress.map((project, index) => (
-                    <div key={index} className="flex flex-col">
+                    <div key={index} className="flex flex-col group">
                         <BorderGlow
                             edgeSensitivity={30}
                             glowColor="40 80 80"
@@ -83,7 +103,7 @@ const WorkInProgress: React.FC = () => {
                         >
                             <NavLink
                                 to={project.link}
-                                className="w-full aspect-video overflow-hidden rounded-[24px]  relative z-50 cursor-pointer block group"
+                                className="w-full aspect-video overflow-hidden rounded-[24px] relative z-50 cursor-pointer block"
                             >
                                 <img
                                     src={project.image}
@@ -94,10 +114,10 @@ const WorkInProgress: React.FC = () => {
                         </BorderGlow>
 
                         <div className="mt-6 px-2">
-                            <h3 className="text-2xl font-bold text-white mb-2">
+                            <h3 className="text-3xl leading-none font-semibold text-white mb-3">
                                 {project.title}
                             </h3>
-                            <p className="text-gray-400 text-base leading-relaxed">
+                            <p className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-lg">
                                 {project.description}
                             </p>
                         </div>
