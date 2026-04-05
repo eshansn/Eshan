@@ -3,7 +3,7 @@ import { GridScan } from '../components/GridScan.tsx';
 import ESNLogo from "@/components/ESNlLogo.tsx";
 import { Instagram, Linkedin, Mail } from 'lucide-react';
 
-// Custom Behance Icon
+
 const BehanceIcon = ({ size = 24, className = "" }) => (
     <svg
         width={size}
