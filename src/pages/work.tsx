@@ -47,7 +47,7 @@ const WorkInProgress: React.FC = () => {
         },
         {
             title: 'OceanIQ UI/UX',
-            description: 'Data-driven dashboard for monitoring marine ecosystems and environmental health.',
+            description: 'A quiz app that explores marine ecosystems and environmental health.',
             image: project5Img,
             link: '/work'
         },
