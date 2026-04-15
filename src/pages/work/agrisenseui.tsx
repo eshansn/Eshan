@@ -136,7 +136,7 @@ const AgriSenseUI: React.FC = () => {
                     {/* FIGMA BUTTON */}
                     <BorderGlow borderRadius={20} glowColor="34 197 94" colors={['#22c55e', '#10b981', '#3b82f6']} glowIntensity={0.5}>
                         <a
-                            href="YOUR_FIGMA_LINK_HERE"
+                            href="https://www.figma.com/community/file/1623618389663830656/agrisense"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative z-50 flex items-center justify-center gap-4 bg-black px-10 py-5 rounded-[18px] border border-white/10 hover:bg-neutral-900 transition-all duration-300 min-w-[240px] h-[72px]"
@@ -149,7 +149,7 @@ const AgriSenseUI: React.FC = () => {
                     {/* BEHANCE BUTTON */}
                     <BorderGlow borderRadius={20} glowColor="34 197 94" colors={['#22c55e', '#10b981', '#3b82f6']} glowIntensity={0.5}>
                         <a
-                            href="YOUR_BEHANCE_LINK_HERE"
+                            href="https://www.behance.net/gallery/245897443/AgriSense-UI-UX"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative z-50 flex items-center justify-center gap-4 bg-black px-10 py-5 rounded-[18px] border border-white/10 hover:bg-neutral-900 transition-all duration-300 min-w-[240px] h-[72px]"
