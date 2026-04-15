@@ -12,6 +12,7 @@ import Projects from './pages/Projects.tsx';
 import WorkInProgress from './pages/work.tsx';
 import ContactPage from './pages/Contact.tsx'
 import AgriSenseUI from './pages/work/agrisenseui';
+import OceanIqUI from './pages/work/oceaniq';
 
 const HomeContent = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -65,6 +66,7 @@ export default function App() {
                 <Route path="/" element={<HomeContent />} />
                 <Route path="/work" element={<WorkInProgress />} />
                 <Route path="/work/agrisense" element={<AgriSenseUI />} />
+                <Route path="/work/oceaniq" element={<OceanIqUI />} />
                 <Route path="*" element={<div className="pt-40 text-center">404 - Page Not Found</div>} />
             </Routes>
         </div>

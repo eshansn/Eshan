@@ -49,7 +49,7 @@ const WorkInProgress: React.FC = () => {
             title: 'OceanIQ UI/UX',
             description: 'A quiz app that explores marine ecosystems and environmental health.',
             image: project5Img,
-            link: '/work'
+            link: '/work/oceaniq'
         },
         {
             title: 'IOS inspired Landing Page',
