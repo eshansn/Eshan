@@ -11,6 +11,7 @@ import Gallery from './pages/Gallery.tsx';
 import Projects from './pages/Projects.tsx';
 import WorkInProgress from './pages/work.tsx';
 import ContactPage from './pages/Contact.tsx'
+import AgriSenseUI from './pages/work/agrisenseui';
 
 const HomeContent = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -53,7 +54,7 @@ export default function App() {
     const location = useLocation(); // Hook to get current path
 
     // Logic: Hide Navbar if we are on the /work page
-    const showNavbar = location.pathname !== '/work';
+    const showNavbar = !location.pathname.startsWith('/work');
 
     return (
         <div className="min-h-screen w-full bg-black text-white overflow-x-hidden relative">
@@ -63,6 +64,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<HomeContent />} />
                 <Route path="/work" element={<WorkInProgress />} />
+                <Route path="/work/agrisense" element={<AgriSenseUI />} />
                 <Route path="*" element={<div className="pt-40 text-center">404 - Page Not Found</div>} />
             </Routes>
         </div>

@@ -25,7 +25,7 @@ const WorkInProgress: React.FC = () => {
             title: 'AgriSense UI/UX',
             description: 'A mobile app for paddy farmers featuring an AI chatbot and AI-driven weather insights to support smarter seeding, harvesting, and crop management decisions.',
             image: project1Img,
-            link: '/work'
+            link: '/work/agrisense'
         },
         {
             title: 'StaySeek UI/UX',
