@@ -15,6 +15,7 @@ import ContactPage from './pages/Contact.tsx'
 import AgriSenseUI from './pages/work/agrisenseui';
 import OceanIqUI from './pages/work/oceaniq';
 import StaySeekUI from './pages/work/stayseek';
+import MedReachUI from './pages/work/medreach';
 
 const HomeContent = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -32,13 +33,12 @@ const HomeContent = () => {
 
     return (
         <>
-            {/* 2. Add Helmet tags for the Home Page */}
+
             <Helmet>
                 <title>Eshan Nethmina</title>
 
                 <meta name="description" content="Portfolio of Eshan Nethmina. Explore my latest projects balancing engineering performance with user-centered design, including web and mobile applications." />
 
-                {/* Open Graph for Socials (LinkedIn, WhatsApp, etc.) */}
                 <meta property="og:title" content="Eshan Nethmina | Portfolio" />
                 <meta property="og:description" content="Portfolio of Eshan Nethmina. Explore my latest projects balancing engineering performance with user-centered design." />
                 <meta property="og:type" content="website" />
@@ -86,6 +86,7 @@ export default function App() {
                 <Route path="/work/agrisense" element={<AgriSenseUI />} />
                 <Route path="/work/oceaniq" element={<OceanIqUI />} />
                 <Route path="/work/stayseek" element={<StaySeekUI />} />
+                <Route path="/work/medreach" element={<MedReachUI />} />
                 <Route path="*" element={<div className="pt-40 text-center">404 - Page Not Found</div>} />
             </Routes>
         </div>

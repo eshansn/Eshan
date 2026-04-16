@@ -37,13 +37,13 @@ const WorkInProgress: React.FC = () => {
             title: 'Medreach',
             description: 'A healthcare platform designed to bridge the gap between patients and specialized medical services.',
             image: project3Img,
-            link: '/work'
+            link: '/work/medreach'
         },
         {
             title: 'Medreach UI/UX',
             description: 'User-centric interface design for healthcare management and appointment scheduling.',
             image: project4Img,
-            link: '/work'
+            link: '/work/medreach'
         },
         {
             title: 'OceanIQ UI/UX',
