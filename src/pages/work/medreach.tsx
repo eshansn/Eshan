@@ -55,6 +55,7 @@ const MedReachUI: React.FC = () => {
     ];
 
     const neonPurple = "128 50 255";
+    const neonPurpleII = "128, 50, 255";
     const neonColors = ['#a855f7', '#d8b4fe', '#818cf8'];
 
     return (
@@ -127,7 +128,7 @@ const MedReachUI: React.FC = () => {
                         <SpotlightCard
                             key={i}
                             className="p-10 border border-white/10 bg-white/5 rounded-[32px]"
-                            spotlightColor={`rgba(${neonPurple}, 0.1)`}
+                            spotlightColor={`rgba(${neonPurpleII}, 0.2)`}
                         >
                             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-white">{f.title}</h3>
                             <p className="text-gray-400 text-lg leading-relaxed">{f.desc}</p>

@@ -16,6 +16,7 @@ import AgriSenseUI from './pages/work/agrisenseui';
 import OceanIqUI from './pages/work/oceaniq';
 import StaySeekUI from './pages/work/stayseek';
 import MedReachUI from './pages/work/medreach';
+import MacBookLandingUI from './pages/work/maclandingpage.tsx';
 
 const HomeContent = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -87,6 +88,7 @@ export default function App() {
                 <Route path="/work/oceaniq" element={<OceanIqUI />} />
                 <Route path="/work/stayseek" element={<StaySeekUI />} />
                 <Route path="/work/medreach" element={<MedReachUI />} />
+                <Route path="/work/maclandingpage" element={<MacBookLandingUI />} />
                 <Route path="*" element={<div className="pt-40 text-center">404 - Page Not Found</div>} />
             </Routes>
         </div>

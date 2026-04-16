@@ -55,7 +55,7 @@ const WorkInProgress: React.FC = () => {
             title: 'IOS inspired Landing Page',
             description: 'A sleek, high-fidelity landing page following Apple design principles and animations.',
             image: project6Img,
-            link: '/work'
+            link: '/work/maclandingpage'
         }
     ];
 
