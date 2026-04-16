@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { Routes, Route, useLocation } from "react-router-dom"; // Added useLocation
+import { Routes, Route, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async"; // 1. Import Helmet
 import gsap from "gsap";
 
 import heroVideo from "@/assets/hero-video.mp4";
@@ -31,6 +32,23 @@ const HomeContent = () => {
 
     return (
         <>
+            {/* 2. Add Helmet tags for the Home Page */}
+            <Helmet>
+                <title>Eshan Nethmina</title>
+
+                <meta name="description" content="Portfolio of Eshan Nethmina. Explore my latest projects balancing engineering performance with user-centered design, including web and mobile applications." />
+
+                {/* Open Graph for Socials (LinkedIn, WhatsApp, etc.) */}
+                <meta property="og:title" content="Eshan Nethmina | Portfolio" />
+                <meta property="og:description" content="Portfolio of Eshan Nethmina. Explore my latest projects balancing engineering performance with user-centered design." />
+                <meta property="og:type" content="website" />
+
+                {/* Twitter / X */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Eshan Nethmina | Portfolio" />
+                <meta name="twitter:description" content="Portfolio of Eshan Nethmina. Explore my latest projects balancing engineering performance with user-centered design." />
+            </Helmet>
+
             <section id="home" ref={containerRef} className="relative h-screen flex items-center justify-center px-6">
                 <div className="w-full flex justify-center items-center">
                     <video
@@ -53,14 +71,13 @@ const HomeContent = () => {
 };
 
 export default function App() {
-    const location = useLocation(); // Hook to get current path
+    const location = useLocation();
 
     // Logic: Hide Navbar if we are on the /work page
     const showNavbar = !location.pathname.startsWith('/work');
 
     return (
         <div className="min-h-screen w-full bg-black text-white overflow-x-hidden relative">
-            {/* Render Navbar only if showNavbar is true */}
             {showNavbar && <Navbar />}
 
             <Routes>
