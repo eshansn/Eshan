@@ -76,7 +76,7 @@ const MedReachUI: React.FC = () => {
 
             <div className="max-w-7xl mx-auto mb-16">
                 <SplitText
-                    text="MedReach UI/UX"
+                    text="MedReach"
                     className="text-5xl sm:text-8xl md:text-9xl font-bold text-left text-white mb-6 pb-6 leading-[1.1]"
                 />
                 <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
