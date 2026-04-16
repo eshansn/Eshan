@@ -108,7 +108,7 @@ const MedReachUI: React.FC = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-32 border-t border-white/10 pt-12">
                 <div>
                     <h4 className="text-gray-500 uppercase text-sm tracking-widest mb-4 font-mono">Role</h4>
-                    <p className="text-xl md:text-2xl">Lead Design Team</p>
+                    <p className="text-xl md:text-2xl">Lead Designer/Developer</p>
                 </div>
                 <div>
                     <h4 className="text-gray-500 uppercase text-sm tracking-widest mb-4 font-mono">Challenge</h4>
