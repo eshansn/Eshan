@@ -31,7 +31,7 @@ const WorkInProgress: React.FC = () => {
             title: 'StaySeek UI/UX',
             description: 'A dual-portal boarding app that connects owners and seekers through intuitive navigation, clear amenity listings, and a streamlined booking flow.',
             image: project2Img,
-            link: '/work'
+            link: '/work/stayseek'
         },
         {
             title: 'Medreach',
